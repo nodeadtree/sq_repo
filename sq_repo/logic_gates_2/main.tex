@@ -10,7 +10,6 @@
 \hspace{1in}
 \begin{minipage}{.5\linewidth}
     \includegraphics[width=3 in]{images/and.png}
-	\label{img2}
 \end{minipage}
 \begin{minipage}{\linewidth}
 \begin{tabular}{|ll|l|}
@@ -29,7 +28,6 @@
 \hspace{1in}
 \begin{minipage}{.5\linewidth}
     \includegraphics[width=3 in]{images/or1.png}
-	\label{img2}
 \end{minipage}
 \begin{minipage}{\linewidth}
 \begin{tabular}{|ll|l|}
@@ -48,7 +46,6 @@
 \hspace{1in}
 \begin{minipage}{.5\linewidth}
     \includegraphics[width=3 in]{images/not1.png}
-	\label{img2}
 \end{minipage}
 \begin{minipage}{\linewidth}
 	\begin{tabular}{|l|l|}
@@ -80,7 +77,6 @@ which is where we get the names from, N(ot)AND, and N(ot)OR.\\
 \hspace{1in}
 \begin{minipage}{.5\linewidth}
     \includegraphics[width=3 in]{images/nand_diagram.png}
-	\label{img2}
 \end{minipage}
 \begin{minipage}{\linewidth}
     \begin{tabular}{|ll|l|}
@@ -97,7 +93,6 @@ which is where we get the names from, N(ot)AND, and N(ot)OR.\\
 \hspace{1in}
 \begin{minipage}{.5\linewidth}
     \includegraphics[width=3 in]{images/nor_diagram.png}
-	\label{img2}
 \end{minipage}
 \begin{minipage}{\linewidth}
     \begin{tabular}{|ll|l|}
@@ -113,6 +108,7 @@ which is where we get the names from, N(ot)AND, and N(ot)OR.\\
 \begin{center}
     \textbf{Problems}
 \end{center}
+\begin{enumerate}
     \item Can you think of a real life example of NAND or NOR?
     \vspace{2in}
     \item Can you think of any benefits to making these extra gates?
@@ -128,7 +124,6 @@ of XOR.\\
 \hspace{1in}
 \begin{minipage}{.5\linewidth}
     \includegraphics[width=3 in]{images/xor_diagram.png}
-	\label{img2}
 \end{minipage}
 \begin{minipage}{\linewidth}
     \begin{tabular}{|ll|l|}
@@ -145,7 +140,6 @@ of XOR.\\
 \hspace{1in}
 \begin{minipage}{.5\linewidth}
     \includegraphics[width=3 in]{images/xnor_diagram.png}
-	\label{img2}
 \end{minipage}
 \begin{minipage}{\linewidth}
     \begin{tabular}{|ll|l|}
@@ -165,6 +159,90 @@ of XOR.\\
     \item Can you make a combination of AND and OR gates that replicate the behavior of the XOR gate?
     \item Looking back on all of the new gates, can you see a common reason why there are this many gates?
     \item Can you make a logic diagram with the following truth tables?
+        \begin{enumerate}
+            \item 
+                \begin{tabular}{|c|c|c|c|c|}
+                    \hline
+                    \multicolumn{4}{|c|}{Input} & Output\\ \hline
+                    A & B & C & D &  \\ \hline
+                    0 & 0 & 0 & 0 & 0 \\ \hline
+                    0 & 0 & 0 & 1 & 0 \\ \hline
+                    0 & 0 & 1 & 0 & 1 \\ \hline
+                    0 & 0 & 1 & 1 & 1 \\ \hline
+                    0 & 1 & 0 & 0 & 0 \\ \hline
+                    0 & 1 & 0 & 1 & 1 \\ \hline
+                    0 & 1 & 1 & 0 & 1 \\ \hline
+                    0 & 1 & 1 & 1 & 0 \\ \hline
+                    1 & 0 & 0 & 0 & 0 \\ \hline
+                    1 & 0 & 0 & 1 & 1 \\ \hline
+                    1 & 0 & 1 & 0 & 1 \\ \hline
+                    1 & 0 & 1 & 1 & 1 \\ \hline
+                    1 & 1 & 0 & 0 & 0 \\ \hline
+                    1 & 1 & 0 & 1 & 1 \\ \hline
+                    1 & 1 & 1 & 0 & 0 \\ \hline
+                    1 & 1 & 1 & 1 & 1 \\ \hline
+                \end{tabular}
+            \item 
+                \begin{tabular}{|c|c|c|c|c|}
+                    \hline
+                    \multicolumn{4}{|c|}{Input} & Output\\ \hline
+                    A & B & C & D &  \\ \hline
+                    0 & 0 & 0 & 0 & 1 \\ \hline
+                    0 & 0 & 0 & 1 & 0 \\ \hline
+                    0 & 0 & 1 & 0 & 1 \\ \hline
+                    0 & 0 & 1 & 1 & 0 \\ \hline
+                    0 & 1 & 0 & 0 & 0 \\ \hline
+                    0 & 1 & 0 & 1 & 1 \\ \hline
+                    0 & 1 & 1 & 0 & 1 \\ \hline
+                    0 & 1 & 1 & 1 & 0 \\ \hline
+                    1 & 0 & 0 & 0 & 1 \\ \hline
+                    1 & 0 & 0 & 1 & 1 \\ \hline
+                    1 & 0 & 1 & 0 & 0 \\ \hline
+                    1 & 0 & 1 & 1 & 1 \\ \hline
+                    1 & 1 & 0 & 0 & 0 \\ \hline
+                    1 & 1 & 0 & 1 & 1 \\ \hline
+                    1 & 1 & 1 & 0 & 0 \\ \hline
+                    1 & 1 & 1 & 1 & 0 \\ \hline
+                \end{tabular}
+            \item 
+                \begin{tabular}{|c|c|c|c|c|c|}
+                    \hline
+                    \multicolumn{4}{|c|}{Input} & \multicolumn{2}{|c|}{Outputs}\\ \hline
+                    A & B & C & D &   &   \\ \hline
+                    0 & 0 & 0 & 0 & 1 & 0 \\ \hline
+                    0 & 0 & 0 & 1 & 0 & 1 \\ \hline
+                    0 & 0 & 1 & 0 & 1 & 1 \\ \hline
+                    0 & 0 & 1 & 1 & 0 & 0 \\ \hline
+                    0 & 1 & 0 & 0 & 1 & 0 \\ \hline
+                    0 & 1 & 0 & 1 & 1 & 0 \\ \hline
+                    0 & 1 & 1 & 0 & 1 & 1 \\ \hline
+                    0 & 1 & 1 & 1 & 0 & 0 \\ \hline
+                    1 & 0 & 0 & 0 & 1 & 1 \\ \hline
+                    1 & 0 & 0 & 1 & 1 & 0 \\ \hline
+                    1 & 0 & 1 & 0 & 1 & 0 \\ \hline
+                    1 & 0 & 1 & 1 & 1 & 1 \\ \hline
+                    1 & 1 & 0 & 0 & 1 & 1 \\ \hline
+                    1 & 1 & 0 & 1 & 0 & 0 \\ \hline
+                    1 & 1 & 1 & 0 & 0 & 1 \\ \hline
+                    1 & 1 & 1 & 1 & 0 & 1 \\ \hline
+                \end{tabular}
+        \end{enumerate}
+    \item For the following excercises, make your own truth tables, then share with a neighbor for them to make a logic diagram
+        that matches the truth table you made!
+        \begin{enumerate}
+            \item  Make a truth table with 2 inputs and 1 output
+            \item  Make a truth table with 3 inputs and 2 output
+            \item  Make a truth table with 4 inputs and 1 output
+        \end{enumerate}
+    \item Make a logic diagram to determine if you had a good day, try to have multiple inputs if possible!
+    \item A tautology or something that is vacuously true is a diagram that only gives a true output, no matter what inputs you
+        give it. An example from the previous worksheet was,\\
+        \vspace{10mm}
+        \begin{minipage}{.5\linewidth}
+            \includegraphics[width=3 in]{images/tautology.png}
+        \end{minipage}\\
+        \vspace{10mm}
+        Can you make your own tautology? Can you think of an English sentence that's a tautology?
     \item Are there any more logic gates that could possibly exist? Explain your reasoning, thoughts or musings on the matter. I encourage
     \item These gates are made to give logic some kind of notation or language which we typically refer to as abstraction. Are there any problems
         with using these to describe any given logical argument or sequence of thoughts? Keep in mind that when we do this kind of thing, our variables
@@ -183,4 +261,3 @@ of XOR.\\
         Use the diagrams if they help!
 \end{enumerate}
 \end{document}
-
